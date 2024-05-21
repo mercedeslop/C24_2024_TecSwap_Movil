@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Explorar"
+        android:id="@+id/mExplora"
+        android:icon="@drawable/ic_explorar"/>
+
+    <item
+        android:title="Trueques"
+        android:id="@+id/mTrueque"
+        android:icon="@drawable/ic_trueque"/>
+
+    <item
+        android:title="Productos"
+        android:id="@+id/mProducto"
+        android:icon="@drawable/ic_productos"/>
+
+    <item
+        android:title="Perfil"
+        android:id="@+id/mPerfil"
+        android:icon="@drawable/ic_perfil1"/>
+
+    <item
+        android:title="Favoritos"
+        android:id="@+id/mFavorito"
+        android:icon="@drawable/ic_favoritos"/>
+</menu>

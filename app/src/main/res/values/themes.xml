@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TecSwap" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/first_theme</item>
+        <item name="colorPrimaryVariant">@color/first_theme</item>
+        <item name="android:statusBarColor">@color/first_theme</item>
+    </style>
+
+    <style name="Theme.TecSwap" parent="Base.Theme.TecSwap" />
+
+    <style name="Theme.App.SplashScreen" parent = "Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/first_theme</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.TecSwap</item>
+
+    </style>
+
+    <style name="Theme.BottomNavigation" parent="Base.Theme.TecSwap"/>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/first_theme</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "410073572951",
+    "project_id": "tecswap-4ac19",
+    "storage_bucket": "tecswap-4ac19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410073572951:android:5ef5f022b0aed850bc2512",
+        "android_client_info": {
+          "package_name": "com.jennyfer.sapallanay.tecswap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHDkqusUxE2WIl4jMgV5imw6suulvuwDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
