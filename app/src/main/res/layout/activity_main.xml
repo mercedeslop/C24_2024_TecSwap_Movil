@@ -13,13 +13,13 @@
         android:src="@drawable/logo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/signInButton"
         android:layout_width="320dp"
         android:layout_height="62dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
-        android:drawableStart="@drawable/google"
+        android:drawableStart="@drawable/google2"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:text="@string/login_button"

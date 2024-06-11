@@ -38,17 +38,26 @@ android {
 }
 
 dependencies {
+    // Firebase BoM to manage versions of Firebase libraries
     implementation platform('com.google.firebase:firebase-bom:33.0.0')
     implementation 'com.google.firebase:firebase-analytics'
-    implementation "com.google.android.gms:play-services-auth:21.0.0"
-    implementation "com.google.firebase:firebase-auth"
+    implementation 'com.google.firebase:firebase-auth-ktx' // Updated to KTX version
+
+    // Google Sign-In
+    implementation 'com.google.android.gms:play-services-auth:21.0.0'
+
+    // AndroidX Libraries
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation libs.material
     implementation libs.androidx.activity
     implementation libs.androidx.constraintlayout
+
+    // Testing Libraries
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core
-    implementation "androidx.core:core-splashscreen:1.0.0-rc01"
+
+    // Splash Screen API
+    implementation "androidx.core:core-splashscreen:1.0.0"
 }
