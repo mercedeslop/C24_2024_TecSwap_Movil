@@ -5,25 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.MainActivity2">
+    tools:context=".ui.activities.SplashActivity">
 
-
-    <FrameLayout
-        android:id="@+id/frameContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavMenu"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imvLogo"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:menu="@menu/menu_nav_inferior"
-        android:background="@color/white"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"/>
+        app:srcCompat="@drawable/logo2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

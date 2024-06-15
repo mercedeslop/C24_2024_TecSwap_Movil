@@ -14,17 +14,6 @@ class PerfilFragment : Fragment() {
     private var _binding: FragmentPerfilBinding? = null
     private val binding get() = _binding!!
 
-    private var callback: SignOutCallback? = null
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        if (context is SignOutCallback) {
-            callback = context
-        } else {
-            throw RuntimeException("$context must implement SignOutCallback")
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,19 +22,4 @@ class PerfilFragment : Fragment() {
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binding.btnCerrarSesion.setOnClickListener {
-            callback?.signOut()
-        }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-
-    interface SignOutCallback {
-        fun signOut()
-    }
 }
